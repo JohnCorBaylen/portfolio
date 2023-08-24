@@ -1,10 +1,21 @@
 import Head from "next/head"
+import Image from "next/image"
 import { AiFillLinkedin, AiFillGithub} from "react-icons/ai"
 import { BsFillMoonStarsFill } from "react-icons/bs"
 import { useState } from "react"
 
 import deved from "../public/my-photo.jpg"
-import Image from "next/image"
+
+import { Primary } from "./tech-stacks/primary"
+import { WordPress } from "./tech-stacks/wordpress"
+import { MobileApp } from "./tech-stacks/mobile-app-development"
+import { CSSFramework } from "./tech-stacks/css-framework"
+import { UiUx } from "./tech-stacks/ui-ux"
+import { APITesting } from "./tech-stacks/api-testing"
+import { VersionControl } from "./tech-stacks/version-control"
+import { Ide } from "./tech-stacks/ide"
+import { Os } from "./tech-stacks/os"
+import { Other} from "./tech-stacks/other-learning"
 
 export default function Home() {
     const [darkMode, setDarkMode] = useState(false)
@@ -25,6 +36,11 @@ export default function Home() {
                                 Home
                             </a>
                         </li>
+                        {/* <li className="hover:text-teal-600 dark:hover:text-teal-400 cursor-pointer">
+                            <a href="#tech-stacks">
+                                Tech Stacks
+                            </a>
+                        </li> */}
                         <li className="hover:text-teal-600 dark:hover:text-teal-400 cursor-pointer">
                             <a href="#about">
                                 About
@@ -58,14 +74,15 @@ export default function Home() {
                     </ul>
                 </nav>
             </section>
-            <main className="bg-slate-100 px-10 dark:bg-gray-900 md:px-20 lg:px-40">
+            <main className="bg-white dark:bg-gray-900 flex-col justify-center items-center">
                 <section 
-                    className="flex pt-20 pb-96 justify-center items-center"
+                    className="flex pt-32 pb-14 justify-center items-center w-4/5 mx-auto"
+                    // md:px-20 lg:px-40
                     id="home"
                 >
-                    <div className="inline-flex justify-between items-center">
+                    <div className="inline-flex justify-between items-center w-full">
                         <div className="text-center">
-                            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+                            <h2 className="text-5xl py-2 font-extrabold text-teal-600 dark:text-teal-400 md:text-6xl">
                                 Front-End Developer 
                             </h2>
                             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
@@ -97,6 +114,30 @@ export default function Home() {
                                 alt="" 
                             />
                             </div>
+                        </div>
+                    </div>
+                </section>
+                <section 
+                    className="bg-slate-100 text-gray-800 dark:text-gray-200 dark:bg-gray-800 flex justify-center items-center pb-10 w-full h-full"
+                    id="tech-stacks"
+                >
+                    <div className="flex flex-col w-4/5">
+                        <h3 
+                            className="text-xl py-10 font-extrabold text-teal-600 dark:text-teal-400 md:text-3xl"
+                        >
+                            Tech Stack
+                        </h3>
+                        <div className="flex flex-col gap-y-4">
+                            <Primary/>
+                            <WordPress/>
+                            <MobileApp/>
+                            <CSSFramework/>
+                            <UiUx/>
+                            <APITesting/>
+                            <VersionControl/>
+                            <Ide/>
+                            <Os/>
+                            <Other/>
                         </div>
                     </div>
                 </section>
