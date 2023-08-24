@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import { OTHER_LEARNING } from "../path"
+import { OTHER_LEARNING } from "../constants/path"
 
 export function Other () {
     return (

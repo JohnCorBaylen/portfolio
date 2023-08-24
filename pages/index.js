@@ -6,16 +6,16 @@ import { useState } from "react"
 
 import deved from "../public/my-photo.jpg"
 
-import { Primary } from "./tech-stacks/primary"
-import { WordPress } from "./tech-stacks/wordpress"
-import { MobileApp } from "./tech-stacks/mobile-app-development"
-import { CSSFramework } from "./tech-stacks/css-framework"
-import { UiUx } from "./tech-stacks/ui-ux"
-import { APITesting } from "./tech-stacks/api-testing"
-import { VersionControl } from "./tech-stacks/version-control"
-import { Ide } from "./tech-stacks/ide"
-import { Os } from "./tech-stacks/os"
-import { Other} from "./tech-stacks/other-learning"
+import { Primary } from "../components/primary"
+import { WordPress } from "../components/wordpress"
+import { MobileApp } from "../components/mobile-app-development"
+import { CSSFramework } from "../components/css-framework"
+import { UiUx } from "../components/ui-ux"
+import { APITesting } from "../components/api-testing"
+import { VersionControl } from "../components/version-control"
+import { Ide } from "../components/ide"
+import { Os } from "../components/os"
+import { Other} from "../components/other-learning"
 
 export default function Home() {
     const [darkMode, setDarkMode] = useState(false)

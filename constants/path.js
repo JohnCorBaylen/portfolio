@@ -40,13 +40,14 @@ import redux from "../public/redux.png"
 import nodejs from "../public/nodejs.png"
 
 
-// import  from "../public/.png"
+// import  from "/.png"
 // ,
 //     {
 //         id: 0,
 //         name: "Vite",
 //         path: vite
 //     }
+
 
 export const PRIMARY = [
     {

@@ -1,17 +1,17 @@
 import Image from "next/image"
 
-import { PRIMARY } from "../path"
+import { API_TESTING } from "../constants/path"
 
-export function Primary () {
+export function APITesting () {
     return (
         <div className=" inline-flex justify-start items-center">
             <h4 
                 className="text-md px-6 mr-10 w-1/4 border-r-2 text-gray-800 dark:text-gray-200 max-w-xl md:text-xl"
             >
-                Primary
+                API Testing
             </h4>
             <div className="flex flex-wrap gap-3 w-3/4">
-                { PRIMARY.map(
+                { API_TESTING.map(
                     (TECH_STACKS) => ( 
                         <div
                             key={ TECH_STACKS.id }

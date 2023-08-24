@@ -1,17 +1,17 @@
 import Image from "next/image"
 
-import { MOBILE_APP_DEV } from "../path"
+import { OS } from ".././constants/path"
 
-export function MobileApp () {
+export function Os () {
     return (
         <div className=" inline-flex justify-start items-center">
             <h4 
                 className="text-md px-6 mr-10 w-1/4 border-r-2 text-gray-800 dark:text-gray-200 max-w-xl md:text-xl"
             >
-                Mobile App Development
+                Operating System
             </h4>
             <div className="flex flex-wrap gap-3 w-3/4">
-                { MOBILE_APP_DEV.map(
+                { OS.map(
                     (TECH_STACKS) => ( 
                         <div
                             key={ TECH_STACKS.id }

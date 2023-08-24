@@ -1,17 +1,17 @@
 import Image from "next/image"
 
-import { CSS_FRAMEWORK } from "../path"
+import { VERSION_CONTROL } from "../constants/path"
 
-export function CSSFramework () {
+export function VersionControl () {
     return (
         <div className=" inline-flex justify-start items-center">
             <h4 
                 className="text-md px-6 mr-10 w-1/4 border-r-2 text-gray-800 dark:text-gray-200 max-w-xl md:text-xl"
             >
-                CSS Framework
+                Version Control
             </h4>
             <div className="flex flex-wrap gap-3 w-3/4">
-                { CSS_FRAMEWORK.map(
+                { VERSION_CONTROL.map(
                     (TECH_STACKS) => ( 
                         <div
                             key={ TECH_STACKS.id }
